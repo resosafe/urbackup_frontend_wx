@@ -29,6 +29,6 @@ call build_msi.bat
 
 if NOT "%SIGN%" == "true" GOTO skip_signing2
 
-signtool sign /fd sha256 /t http://time.certum.pl /i Certum "UrBackup Client $version_short$.exe" "UrBackup Client NoTray $version_short$.exe" "UrBackup Client $version_short$(x64).msi" "UrBackup Client (No tray) $version_short$(x64).msi"
+signtool sign /fd sha256 /t http://time.certum.pl /i Certum "UrBackup Client 2.5.26.exe" "UrBackup Client NoTray 2.5.26.exe" "UrBackup Client 2.5.26(x64).msi" "UrBackup Client (No tray) 2.5.26(x64).msi"
 
 :skip_signing2

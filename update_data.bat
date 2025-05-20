@@ -70,7 +70,7 @@ mkdir data\lang\no_NO
 mkdir data\lang\sv
 mkdir data\lang\fi
 mkdir data\lang\ja
-tx pull -a
+;tx pull -a
 set LANG_DIR=translations\urbackup.frontend\
 msgfmt "%LANG_DIR%\de.po" -o "data\lang\de\urbackup.mo"
 msgfmt "%LANG_DIR%\fr.po" -o "data\lang\fr\urbackup.mo"
