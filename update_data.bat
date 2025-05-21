@@ -59,7 +59,7 @@ mkdir data\lang\es
 mkdir data\lang\zh_TW
 mkdir data\lang\zh_CN
 mkdir data\lang\pt_BR
-mkdir data\lang\pt
+mkdir data\lang\pt_PT
 mkdir data\lang\it
 mkdir data\lang\pl
 mkdir data\lang\sk
@@ -83,7 +83,7 @@ msgfmt "%LANG_DIR%\es.po" -o "data\lang\es\urbackup.mo"
 msgfmt "%LANG_DIR%\zh_TW.Big5.po" -o "data\lang\zh_TW\urbackup.mo"
 msgfmt "%LANG_DIR%\zh_CN.GB2312.po" -o "data\lang\zh_CN\urbackup.mo"
 msgfmt "%LANG_DIR%\pt_BR.po" -o "data\lang\pt_BR\urbackup.mo"
-msgfmt "%LANG_DIR%\pt.po" -o "data\lang\pt\urbackup.mo"
+msgfmt "%LANG_DIR%\pt_PT.po" -o "data\lang\pt_PT\urbackup.mo"
 msgfmt "%LANG_DIR%\it_IT.po" -o "data\lang\it\urbackup.mo"
 msgfmt "%LANG_DIR%\pl.po" -o "data\lang\pl\urbackup.mo"
 msgfmt "%LANG_DIR%\sk.po" -o "data\lang\sk\urbackup.mo"
