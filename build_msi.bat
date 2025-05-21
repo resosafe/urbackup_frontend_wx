@@ -1,4 +1,4 @@
-set version=$version_short$
+set version=2.5.26
 
 candle -ext WixUtilExtension -ext WixFirewallExtension urbackup.wxs
 light urbackup.wixobj -ext WixUtilExtension -ext WixFirewallExtension -ext WixUIExtension -out "UrBackup Client %version%(x64).msi"

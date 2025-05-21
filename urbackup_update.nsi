@@ -1,4 +1,4 @@
-!define MUI_BRANDINGTEXT "UrBackup Client $version_short$"
+!define MUI_BRANDINGTEXT "UrBackup Client 2.5.26"
 !include "${NSISDIR}\Contrib\Modern UI\System.nsh"
 !include WinVer.nsh
 !include "x64.nsh"
@@ -7,7 +7,7 @@
 SetCompressor /FINAL lzma
 CRCCheck off
 
-Name "UrBackup Client $version_short$"
+Name "UrBackup Client 2.5.26"
 OutFile "UrBackupUpdate.exe"
 InstallDir "$PROGRAMFILES\UrBackup"
 RequestExecutionLevel highest
@@ -191,7 +191,7 @@ Section "install"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\UrBackup" "DisplayName" "UrBackup (remove only)"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\UrBackup" "UninstallString" "$INSTDIR\Uninstall.exe"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\UrBackup" "Path" "$INSTDIR"
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\UrBackup" "DisplayVersion" "$version_short$"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\UrBackup" "DisplayVersion" "2.5.26"
 	
 	ClearErrors
 	
