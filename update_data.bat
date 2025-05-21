@@ -48,6 +48,10 @@ copy /Y "..\deps\redist\libzstd_x86_64.dll" "data_x64\libzstd.dll"
 copy /Y "version.txt" "data\curr_version.txt"
 copy /Y "info.txt" "data\info.txt"
 
+
+
+
+
 mkdir data\lang\de
 mkdir data\lang\fr
 mkdir data\lang\ru
@@ -70,7 +74,7 @@ mkdir data\lang\no_NO
 mkdir data\lang\sv
 mkdir data\lang\fi
 mkdir data\lang\ja
-tx pull -a
+
 set LANG_DIR=translations\urbackup.frontend\
 msgfmt "%LANG_DIR%\de.po" -o "data\lang\de\urbackup.mo"
 msgfmt "%LANG_DIR%\fr.po" -o "data\lang\fr\urbackup.mo"
