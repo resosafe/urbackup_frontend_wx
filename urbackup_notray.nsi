@@ -184,8 +184,8 @@ Section "install"
 		ExecWait '"$INSTDIR\UrBackupClient_cmd.exe" --version' $0
 		${If} $0 != '1'
 			StrCpy $SITE_LOCAL_RUNTIME "1"
-			File "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Redist\MSVC\14.36.32532_copy\x64\Microsoft.VC143.CRT\*"
-			File "C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\x64\*"
+			File "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Redist\MSVC\14.44.35112\x64\Microsoft.VC143.CRT\*"
+			File "C:\Program Files (x86)\Windows Kits\10\Redist\10.0.26100.0\ucrt\DLLs\x64\*"
 		${EndIf}
 	${EndIf}
 	File "data\backup-bad.ico"

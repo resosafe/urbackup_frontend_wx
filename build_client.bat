@@ -10,11 +10,13 @@ if %errorlevel% neq 0 exit /b %errorlevel%
 
 
 cd KillProc
-msbuild KillProc.sln /p:Configuration=Release /p:Platform="Win32" /p:vcpkgTriplet="x86-windows-static-md"
+msbuild KillProc.sln /p:Configuration=Release /p:PlatformToolset=v143 /p:Platform="Win32" /p:vcpkgTriplet="x86-windows-static-md"
 if %errorlevel% neq 0 exit /b %errorlevel% 
+copy /Y "Release\KillProc.exe" "..\data\"
 
-msbuild KillProc.sln /p:Configuration=Release /p:Platform="x64" /p:vcpkgTriplet="x64-windows-static-md"
+msbuild KillProc.sln /p:Configuration=Release /p:PlatformToolset=v143 /p:Platform="x64" /p:vcpkgTriplet="x64-windows-static-md"
 if %errorlevel% neq 0 exit /b %errorlevel%
+copy /Y "x64\Release\KillProc.exe" "..\data_x64\"
 
 cd ..
 
